@@ -1,2 +1,11 @@
-<h1>Users#show</h1>
-<p>Find me in app/views/users/show.html.erb</p>
+<h1>ユーザ詳細</h1>
+
+<div>
+  <p>名前: <%= @user_show.first_name %></p>
+  <p>苗字: <%= @user_show.family_name %></p>
+</div>
+
+<hr>
+
+<%= link_to "一覧ページ", root_path %> |
+<%= link_to "登録ページ", users_new_path %>

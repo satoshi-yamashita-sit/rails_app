@@ -5,7 +5,9 @@
     <p>苗字: <%= user.family_name %></p>
   </div>
 
+  <%= link_to "詳細ページ", user_path(user.id) %>
+
   <hr>
 <% end %>
 
-<% link_to "登録ページ", users_new_path %>
+<%= link_to "登録ページ", users_new_path %>

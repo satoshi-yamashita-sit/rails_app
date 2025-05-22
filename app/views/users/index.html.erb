@@ -1,2 +1,11 @@
-<h1>Users#index</h1>
-<p>Find me in app/views/users/index.html.erb</p>
+<h1>一覧ページ</h1>
+<% @users.each do |user| %>
+  <div>
+    <p>名前: <%= user.first_name %></p>
+    <p>苗字: <%= user.family_name %></p>
+  </div>
+
+  <hr>
+<% end %>
+
+<% link_to "登録ページ", users_new_path %>

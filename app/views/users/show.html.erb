@@ -5,7 +5,8 @@
   <p>苗字: <%= @user_show.family_name %></p>
 </div>
 
-<%= link_to "編集", edit_user_path(@user_show.id) %>
+<%= link_to "編集", edit_user_path(@user_show.id) %> |
+<%= link_to "削除", @user_show, data: { turbo_method: :delete } %>
 
 <hr>
 
